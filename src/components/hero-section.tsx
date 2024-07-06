@@ -17,7 +17,7 @@ const HeroSection = () => {
                         step.Discover stylish and comfortable shoes
                     </p>
                 </div>
-                <button className="xl:w-[215px] max-md:px-2 text-white bg-secondary-darkBlue rounded-[20px] xl:p-[5px] md:h-[61px] h-[48px] flex justify-between max-md:mx-auto items-center">
+                <button className="max-md:px-2 text-white bg-secondary-darkBlue rounded-[20px] p-[8px]  flex justify-between max-md:mx-auto items-center">
                     <div className="flex gap-[30px]   mx-auto items-center">
                         <p className="md:text-[20px] text-[18px] leading-[24px]">
                             Shop now

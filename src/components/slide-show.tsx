@@ -3,7 +3,7 @@ import Carousel from "./carousel";
 
 const SlideShow = () => {
     return (
-        <div className="bg-white overflow-hidden   my-[66px] space-y-4 wrapper rounded-[20px] md:p-[30px] p-[10px] md:px-[20px]">
+        <div className="bg-white overflow-hidden  my-[66px] space-y-4 wrapper rounded-[20px] md:p-[30px] p-[10px] md:px-[20px]">
             <div className="flex gap-x-3 justify-between items-center">
                 <h1 className="text-black tracking-tighter font-semibold text-[20px] md:text-[36px]">
                     Today Best Deals!

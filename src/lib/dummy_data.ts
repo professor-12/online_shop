@@ -16,4 +16,15 @@ export const dummy_data = [
       { name: "k-swiss Sneakers B", quantity: 5, price: "40,000" ,path:"/unsplash_jLEGurepDco.png"},
 ] as const
 
-
+export const bestDealData = [
+     { name: "Fashion Sneakers 11", quantity: 20, price: "40,000" ,path:"/unsplash_EpmJBf-kQRE.png",fake:""},
+     { name: "Encap Sneakers N", quantity: 7, price: "350,000" , path:"/unsplash_fUEP0djb1hA.png",fake:""},
+     { name: "Fila Sneakers white", quantity: 3, price: "500,000" ,path:"/unsplash_SzVXG6FFh0Q.png",fake:""},
+     { name: "Encap Sneakers N", quantity: 7, price: "350,000" , path:"/unsplash_fUEP0djb1hA.png",fake:""},
+     { name: "k-swiss Sneakers B", quantity: 5, price: "40,000" ,path:"/unsplash_jLEGurepDco.png",fake:""}, 
+     { name: "Fashion Sneakers 11", quantity: 20, price: "40,000" ,path:"/unsplash_EpmJBf-kQRE.png",fake:""},
+     { name: "Fashion Sneakers 11", quantity: 20, price: "40,000" ,path:"/unsplash_EpmJBf-kQRE.png",fake:""},
+     { name: "k-swiss Sneakers B", quantity: 5, price: "40,000" ,path:"/unsplash_jLEGurepDco.png",fake:""}, 
+     { name: "k-swiss Sneakers B", quantity: 5, price: "40,000" ,path:"/unsplash_jLEGurepDco.png",fake:""}, 
+     { name: "k-swiss Sneakers B", quantity: 5, price: "40,000" ,path:"/unsplash_jLEGurepDco.png",fake:""}, 
+] as const
