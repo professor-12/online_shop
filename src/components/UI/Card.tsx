@@ -4,26 +4,27 @@ import React from "react";
 const Card = ({
     width = "209",
     height = "255",
-
     shop,
     name,
     path,
     price,
     quantity,
+    className,
 }: {
     width?: string;
     height?: string;
-    shop: boolean;
+    shop?: boolean;
     name: string;
     path: string;
     price: number | string;
     fakeprice?: number;
     quantity?: number;
+    className?: string;
 }) => {
     return (
         <div
-            style={{ maxWidth: `${width}px`, maxHeight: `${height}px` }}
-            className="bg-white rounded-[10px]  space-y-[10px] p-[10px]"
+            style={{ minWidth: `${width}px`, minHeight: `${height}px` }}
+            className={`bg-white rounded-[10px]  space-y-[10px] p-[10px]`}
         >
             <div className="bg-secondary-purple h-[150px] items-baseline  rounded-[10px] relative">
                 {!shop && (
