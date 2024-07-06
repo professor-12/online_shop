@@ -12,7 +12,7 @@ const Card = ({
 }) => {
     return (
         <div
-            style={{ width: `${width}px`, height: `${height}px` }}
+            style={{ maxWidth: `${width}px`, height: `${height}px` }}
             className="bg-white rounded-[10px]  space-y-[10px] p-[10px]"
         >
             <div className="bg-secondary-purple h-[150px] items-baseline  rounded-[10px] relative">
