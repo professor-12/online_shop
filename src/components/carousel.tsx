@@ -6,21 +6,22 @@ import Image from "next/image";
 
 const Carousel = () => {
     const targetRef = useRef<any>();
+    const parentRef = useRef<any>();
     const [x, setX] = useState(0);
-    const ts = false;
+    const [startAnimation, setStartAnimation] = useState(false);
     useEffect(() => {
         const timefunc = setInterval(() => {
+            if (!startAnimation) {
+                return;
+            }
+
             setX((prev) => prev + 100);
         }, 2000);
-
-        if (ts) {
-            clearInterval(timefunc);
-        }
 
         return () => {
             clearInterval(timefunc);
         };
-    }, [ts]);
+    }, [startAnimation]);
     useEffect(() => {
         const observerCallback = (entries: any, observer: any) => {
             entries.forEach((entry: any) => {
@@ -43,14 +44,31 @@ const Carousel = () => {
             observerOptions
         );
 
+        const ParentObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    setStartAnimation(true);
+                } else {
+                    setStartAnimation(false);
+                }
+            });
+        }, observerOptions);
+
         const targetElement = targetRef.current;
+        const parentElement = parentRef.current;
         if (targetElement) {
             observer.observe(targetElement);
         }
 
+        if (targetElement) {
+            ParentObserver.observe(parentElement);
+        }
         return () => {
             if (targetElement) {
                 observer.unobserve(targetElement);
+            }
+            if (parentElement) {
+                ParentObserver.unobserve(parentElement);
             }
         };
     }, []);
@@ -65,7 +83,7 @@ const Carousel = () => {
     };
 
     return (
-        <div className="w-full relative">
+        <div ref={parentRef} className="w-full relative">
             <Image
                 onClick={handleScrollRight}
                 className="absolute cursor-pointer right-0 top-[40%] z-[111]"
