@@ -21,9 +21,12 @@ const Card = ({
     quantity?: number;
     className?: string;
 }) => {
+    const Style = !shop
+        ? { minWidth: `${width}px`, minHeight: `${height}px` }
+        : { maxWidth: `${width}px`, maxHeight: `${height}px` };
     return (
         <div
-            style={{ minWidth: `${width}px`, minHeight: `${height}px` }}
+            style={Style}
             className={`bg-white rounded-[10px]  space-y-[10px] p-[10px]`}
         >
             <div className="bg-secondary-purple h-[150px] items-baseline  rounded-[10px] relative">
