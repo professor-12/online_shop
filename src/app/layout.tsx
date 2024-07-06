@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/nav-bar";
-
+import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -17,11 +17,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body
-                className={`${inter.className} bg-skyBlue overflow-x-hidden pb-36`}
-            >
+            <body className={`${inter.className} bg-skyBlue overflow-x-hidden`}>
                 <NavBar />
                 {children}
+                <Footer />
             </body>
         </html>
     );

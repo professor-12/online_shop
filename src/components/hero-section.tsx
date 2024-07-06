@@ -3,23 +3,25 @@ import React from "react";
 
 const HeroSection = () => {
     return (
-        <section className="xl:h-[631px] xl:py-[50px] wrapper flex max-md:flex-col items-center">
-            <div className="pt-[50px] space-y-[39px]">
+        <section className="xl:h-[631px] max-sm:space-y-8 xl:py-[50px] wrapper flex max-md:flex-col items-center">
+            <div className="pt-[50px]  md:text-left text-center space-y-[39px]">
                 <div className="space-y-[15px]">
-                    <p className="md:text-[20px] text-secondary-darkBlue font-[500]">
+                    <p className="md:text-[20px] text-[16px] text-secondary-darkBlue font-[500]">
                         Step Lightly
                     </p>
-                    <h2 className="text-[50px] xl:w-[603px] font-[600] leading-[60px]">
+                    <h2 className="md:text-[50px]  text-[30px] xl:w-[603px] font-[600] leading-[36px] md:leading-[60px]">
                         Nice Shoes that Reflect <br /> Your Personality
                     </h2>
-                    <p className="xl:text-[20px] leading-[29px] text-left font-[400] xl:w-[531px]">
+                    <p className="xl:text-[20px] text-center leading-[29px] md:text-left font-[400] xl:w-[531px]">
                         Step lightly: sustainable footwear for every
                         step.Discover stylish and comfortable shoes
                     </p>
                 </div>
-                <button className="xl:w-[215px] text-white bg-secondary-darkBlue rounded-[20px] xl:p-[5px] xl:h-[61px] flex justify-between items-center">
-                    <div className="flex  gap-[30px]  mx-auto items-center">
-                        <p className="text-[20px] leading-[24px]">Shop now</p>
+                <button className="xl:w-[215px] max-md:px-2 text-white bg-secondary-darkBlue rounded-[20px] xl:p-[5px] md:h-[61px] h-[48px] flex justify-between max-md:mx-auto items-center">
+                    <div className="flex gap-[30px]   mx-auto items-center">
+                        <p className="md:text-[20px] text-[18px] leading-[24px]">
+                            Shop now
+                        </p>
 
                         <Image
                             className="flex self-center pt-2"
