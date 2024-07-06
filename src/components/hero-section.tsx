@@ -33,7 +33,7 @@ const HeroSection = () => {
                 </button>
             </div>
             <Image
-                className="object-contain xl:w-auto w-auto md:w-[45%]"
+                className="xl:w-auto w-auto md:w-[45%]"
                 src={"/Hero images.png"}
                 alt="Hero Image"
                 width={652.85}
