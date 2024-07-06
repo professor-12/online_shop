@@ -1,15 +1,28 @@
 import Image from "next/image";
 import React from "react";
 
-const Card = () => {
+const Card = ({
+    width = "209",
+    height = "255",
+    shop,
+}: {
+    width?: string;
+    height?: string;
+    shop?: boolean;
+}) => {
     return (
-        <div className="w-[209px]  space-y-[10px] p-[10px] h-[255px]">
+        <div
+            style={{ width: `${width}px`, height: `${height}px` }}
+            className="bg-white rounded-[10px]  space-y-[10px] p-[10px]"
+        >
             <div className="bg-secondary-purple h-[150px] items-baseline  rounded-[10px] relative">
-                <div className="h-[66.28px] text-center  rounded-b-[20px] left-6  text-white top-[0px] py-[2px] w-[19px] absolute bg-black">
-                    <p className="text-[14px] text-center rotate-[90deg]">
-                        SALES
-                    </p>
-                </div>
+                {!shop && (
+                    <div className="h-[66.28px] text-center  rounded-b-[20px] left-6  text-white top-[0px] py-[2px] w-[19px] absolute bg-black">
+                        <p className="text-[14px] text-center rotate-[90deg]">
+                            SALES
+                        </p>
+                    </div>
+                )}
                 <div className="h-[150px] place-items-baseline  self-baseline flex align-baseline">
                     <Image
                         src={"/unsplash_s-gYAbQToXk (1).png"}
