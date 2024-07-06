@@ -12,13 +12,13 @@ const SustainableSection = () => {
                     </h1>
                     <button className="xl:w-[215px] text-black max-md:px-2  bg-white rounded-[20px] xl:p-[5px] md:h-[61px] h-[48px] flex justify-between max-md:mx-auto items-center">
                         <div className="flex gap-[30px]   mx-auto items-center">
-                            <p className="md:text-[20px] font-medium text-[18px] md:leading-[24px]">
+                            <p className="md:text-[20px] font-medium text-[18px]">
                                 Shop now
                             </p>
 
                             <Image
-                                className="flex self-center pt-2"
-                                src={"/circle-arrow-right-double-sharp.svg"}
+                                className=""
+                                src={"/elements.svg"}
                                 width={49.02}
                                 height={48}
                                 alt="Shop_now_button"
