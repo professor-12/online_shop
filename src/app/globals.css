@@ -6,8 +6,11 @@
     .wrapper {
         @apply max-md:w-[95%] w-[80%] mx-auto;
     }
+  
+}
 
-    .gradient_button {
+
+  .gradient_button {
         width: 189px;
         height: 37px;
         padding: 5px;
@@ -20,13 +23,3 @@
     .animate {
         animation: 3s animateinfinite infinite linear ease-in-out;
     }
-
-    @keyframes animateinfinite {
-        from {
-            transform: translateX(0);
-        }
-        to {
-            transform: translateX(-100%);
-        }
-    }
-}

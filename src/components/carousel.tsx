@@ -78,7 +78,7 @@ const Carousel = () => {
     };
 
     const handleScrollRight = () => {
-        if (x == 0) return;
+        if (x <= 0) return;
         setX((prev) => prev + 200);
     };
 
