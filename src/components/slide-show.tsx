@@ -8,7 +8,7 @@ const SlideShow = () => {
                 <h1 className="text-black tracking-tighter font-semibold text-[20px] md:text-[36px]">
                     Today Best Deals!
                 </h1>
-                <div className="gradient_button     text-[12px] md:text-[16px] font-medium text-white text-center flex items-center justify-center">
+                <div className="gradient_button   text-[12px] md:text-[16px] font-medium text-white text-center flex items-center justify-center">
                     <span className="max-md:text-xs text-nowrap">
                         Ends in: 12h: 10m: 10s
                     </span>
