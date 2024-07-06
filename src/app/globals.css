@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer {
+    .wrapper {
+        @apply max-md:w-[95%] w-[80%] mx-auto;
+    }
+}
