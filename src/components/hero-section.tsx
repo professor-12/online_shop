@@ -3,13 +3,13 @@ import React from "react";
 
 const HeroSection = () => {
     return (
-        <section className="xl:h-[631px] max-sm:space-y-8 xl:py-[50px] wrapper flex max-md:flex-col items-center">
+        <section className="xl:h-[631px] max-md:space-y-8 py-[50px] wrapper flex max-md:flex-col items-center">
             <div className="pt-[50px]  md:text-left text-center space-y-[39px]">
                 <div className="space-y-[15px]">
                     <p className="md:text-[20px] text-[16px] text-secondary-darkBlue font-[500]">
                         Step Lightly
                     </p>
-                    <h2 className="md:text-[50px]  text-[30px] xl:w-[603px] font-[600] leading-[36px] md:leading-[60px]">
+                    <h2 className="md:text-[40px]  text-[30px] xl:w-[603px] font-[600] leading-[36px] lg:leading-[60px]">
                         Nice Shoes that Reflect <br /> Your Personality
                     </h2>
                     <p className="xl:text-[20px] text-center leading-[29px] md:text-left font-[400] xl:w-[531px]">
@@ -22,10 +22,9 @@ const HeroSection = () => {
                         <p className="md:text-[20px] text-[18px] leading-[24px]">
                             Shop now
                         </p>
-
                         <Image
-                            className="flex self-center pt-2"
-                            src={"/circle-arrow-right-double-sharp.svg"}
+                            className=""
+                            src={"/elements (1).svg"}
                             width={49.02}
                             height={48}
                             alt="Shop_now_button"
@@ -34,7 +33,7 @@ const HeroSection = () => {
                 </button>
             </div>
             <Image
-                className="object-contain"
+                className="object-contain xl:w-auto w-auto md:w-[45%]"
                 src={"/Hero images.png"}
                 alt="Hero Image"
                 width={652.85}
