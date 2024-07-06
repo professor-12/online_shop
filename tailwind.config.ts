@@ -11,10 +11,11 @@ const config: Config = {
       colors: {
         secondary: {
           darkBlue: "#141B34",
+          purple: "#9DAEEA",
         },
         skyBlue: "#D9E0F8",
-        darkStone:"#151414",
-        
+        darkStone: "#151414",
+        gray:"#646464"
       }
 
     },
@@ -23,5 +24,3 @@ const config: Config = {
 };
 export default config;
 
-
-// background: linear-gradient(90deg, #FB6969 0%, #B91D1D 100%);
