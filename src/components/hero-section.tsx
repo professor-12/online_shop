@@ -3,7 +3,7 @@ import React from "react";
 
 const HeroSection = () => {
     return (
-        <section className="xl:h-[631px] xl:p-[50px] wrapper flex max-md:flex-col items-center">
+        <section className="xl:h-[631px] xl:py-[50px] wrapper flex max-md:flex-col items-center">
             <div className="pt-[50px] space-y-[39px]">
                 <div className="space-y-[15px]">
                     <p className="md:text-[20px] text-secondary-darkBlue font-[500]">
