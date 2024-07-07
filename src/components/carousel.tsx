@@ -8,27 +8,12 @@ const Carousel = () => {
     const targetRef = useRef<any>();
     const parentRef = useRef<any>();
     const [x, setX] = useState(0);
-    const [startAnimation, setStartAnimation] = useState(false);
-    useEffect(() => {
-        const timefunc = setInterval(() => {
-            if (!startAnimation) {
-                return;
-            }
-
-            setX((prev) => prev + 100);
-        }, 2000);
-
-        return () => {
-            clearInterval(timefunc);
-        };
-    }, [startAnimation]);
+    const [startAnimation, setStartAnimation] = useState(true);
     useEffect(() => {
         const observerCallback = (entries: any, observer: any) => {
             entries.forEach((entry: any) => {
                 if (entry.isIntersecting) {
                     setX(0);
-                } else {
-                    console.log("Element is out of view");
                 }
             });
         };
@@ -44,41 +29,23 @@ const Carousel = () => {
             observerOptions
         );
 
-        const ParentObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    setStartAnimation(true);
-                } else {
-                    setStartAnimation(false);
-                }
-            });
-        }, observerOptions);
-
         const targetElement = targetRef.current;
-        const parentElement = parentRef.current;
         if (targetElement) {
             observer.observe(targetElement);
-        }
-
-        if (targetElement) {
-            ParentObserver.observe(parentElement);
         }
         return () => {
             if (targetElement) {
                 observer.unobserve(targetElement);
             }
-            if (parentElement) {
-                ParentObserver.unobserve(parentElement);
-            }
         };
     }, []);
 
     const handleScrollLeft = () => {
+        if (x <= 0) return;
         setX((prev) => prev - 200);
     };
 
     const handleScrollRight = () => {
-        if (x <= 0) return;
         setX((prev) => prev + 200);
     };
 
@@ -110,19 +77,18 @@ const Carousel = () => {
                     onClick={(e) => console.log(e)}
                     className="grid  w-ful grid-flow-col gap-[30px]"
                 >
-                    {bestDealData.map(
-                        ({ fake, name, path, price, quantity }) => {
-                            return (
-                                <Card
-                                    className=""
-                                    key={path}
-                                    name={name}
-                                    path={path}
-                                    price={price}
-                                />
-                            );
-                        }
-                    )}
+                    {bestDealData.map(({ fake, name, path, price }) => {
+                        return (
+                            <Card
+                                className=""
+                                key={path}
+                                fakeprice={fake}
+                                name={name}
+                                path={path}
+                                price={price}
+                            />
+                        );
+                    })}
                     <div ref={targetRef}></div>
                 </div>
             </div>
