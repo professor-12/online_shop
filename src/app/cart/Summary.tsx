@@ -1,7 +1,10 @@
+"use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const Summary = () => {
+    const { push } = useRouter();
     return (
         <div className="space-y-[26px]">
             <div className="border-[2px]  p-[10px] border-secondary-darkBlue rounded-[10px] space-y-[22px]">
@@ -49,7 +52,7 @@ const Summary = () => {
                             <h1 className="">Total</h1>
                             <p>#510,000</p>
                         </div>
-                        <button className="w-full text-white  bg-secondary-darkBlue text-center p-[10px] rounded-[5px]">
+                        <button onClick={()=>push("/checkout")} className="w-full text-white  bg-secondary-darkBlue text-center p-[10px] rounded-[5px]">
                             Checkout
                         </button>
                         <button className="w-full text-secondary-darkBlue font-semibold  border border-secondary-darkBlue text-center p-[10px] rounded-[5px]">
