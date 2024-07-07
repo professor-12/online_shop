@@ -43,7 +43,7 @@ const Footer = () => {
                         </Link>
                         <Link
                             className="text-white text-[16px] md:text-[18px]"
-                            href={"/"}
+                            href={"/shop"}
                         >
                             Shop
                         </Link>
@@ -97,6 +97,9 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+            <h1 className="text-white pt-6 text-center">
+                &copy; 2024 FootFashion. All rights reserved
+            </h1>
         </footer>
     );
 };
