@@ -7,7 +7,7 @@ import SustainableSection from "@/components/section";
 
 export default function Home() {
     return (
-        <main>
+        <main className="min-h-screen">
             <HeroSection />
             <SalesAdvert />
             <SlideShow />

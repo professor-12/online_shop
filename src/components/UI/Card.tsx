@@ -9,6 +9,7 @@ const Card = ({
     path,
     price,
     quantity,
+    fakeprice,
     className,
 }: {
     width?: string;
@@ -17,7 +18,7 @@ const Card = ({
     name: string;
     path: string;
     price: number | string;
-    fakeprice?: number;
+    fakeprice?: string;
     quantity?: number;
     className?: string;
 }) => {
@@ -37,7 +38,7 @@ const Card = ({
                         </p>
                     </div>
                 )}
-                <div className="h-[150px] pt-8 flex align-baseline">
+                <div className="pt-8 flex justify-center">
                     <Image
                         src={path ?? "/unsplash_t1sTHYjSN10.png"}
                         width={166}
@@ -71,10 +72,10 @@ const Card = ({
                             shop ? "max-sm:hidden" : ""
                         }`}
                     >
-                        #290,000
+                        {fakeprice && "#" + fakeprice}
                     </p>
                     <p className="font-semibold text-[#151414] relative md:text-sm">
-                        #{price ?? "200,00"}{" "}
+                        #{price}{" "}
                         <span className="absolute top-0 text-xs">00</span>
                     </p>
                 </div>

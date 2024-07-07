@@ -19,7 +19,7 @@ export default function RootLayout({
         <html lang="en">
             <body className={`${inter.className} bg-skyBlue overflow-x-hidden`}>
                 <NavBar />
-                {children}
+                <main className="min-h-screen">{children}</main>
                 <Footer />
             </body>
         </html>
