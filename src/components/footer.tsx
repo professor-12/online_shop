@@ -13,7 +13,7 @@ const Footer = () => {
                         Sustainable footwear for every step.Discover <br />{" "}
                         stylish and comfortable shoes
                     </p>
-                    <div className="flex gap-[40px] justify-center items-center">
+                    <div className="flex gap-[40px] max-md:justify-center items-center">
                         <Image
                             className="max-md:w-[25px]"
                             alt="search_button"
