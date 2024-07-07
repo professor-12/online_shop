@@ -22,12 +22,15 @@ const NavBar = () => {
                         width={20}
                         height={20}
                     />
-                    <Image
-                        alt="cart_img"
-                        src={"/uil_cart.svg"}
-                        width={20}
-                        height={20}
-                    />
+                    <Link href="/cart">
+                        <Image
+                            className="cursor-pointer"
+                            alt="cart_img"
+                            src={"/uil_cart.svg"}
+                            width={20}
+                            height={20}
+                        />
+                    </Link>
                 </div>
             </nav>
             {/* Mobile Nav Bar */}
@@ -46,13 +49,15 @@ const NavBar = () => {
                         width={20}
                         height={20}
                     />
-                    <Image
-                        className="cursor-pointer"
-                        alt="cart_img"
-                        src={"/uil_cart.svg"}
-                        width={20}
-                        height={20}
-                    />
+                    <Link href="/cart">
+                        <Image
+                            className="cursor-pointer"
+                            alt="cart_img"
+                            src={"/uil_cart.svg"}
+                            width={20}
+                            height={20}
+                        />
+                    </Link>
                 </div>
             </nav>
         </div>
