@@ -11,7 +11,7 @@ const NavBar = () => {
                     <Logo />
                     <div className="md:space-x-[50px] font-[600] max-lg:sm flex items-center text-[20px]">
                         <Link href={"/"}>HOME</Link>
-                        <Link href={"/"}>SHOP</Link>
+                        <Link href={"/shop"}>SHOP</Link>
                         <Link href={"/"}>SALES</Link>
                     </div>
                 </div>

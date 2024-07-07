@@ -1,7 +1,10 @@
+"use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const SustainableSection = () => {
+    const a = useRouter();
     return (
         <div className="bg-black py-[10px] text-white my-[66px]">
             <div className="mx-auto p-10 md:w-[80%] lg:w-[70%] flex-col lg:flex-row gap-[54px] flex items-center justify-between">
@@ -10,7 +13,12 @@ const SustainableSection = () => {
                         Sustainable Footwear for <br className="max-md:hdden" />{" "}
                         Every Step
                     </h1>
-                    <button className="text-black max-md:px-2  p-2 px-4 bg-white rounded-[20px]  flex justify-between max-lg:mx-auto items-center">
+                    <button
+                        onClick={() => {
+                            a.push("/shop");
+                        }}
+                        className="text-black max-md:px-2  p-2 px-4 bg-white rounded-[20px]  flex justify-between max-lg:mx-auto items-center"
+                    >
                         <div className="flex gap-[30px]   mx-auto items-center">
                             <p className="md:text-[20px] font-medium text-[18px]">
                                 Shop now

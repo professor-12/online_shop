@@ -5,9 +5,9 @@ import React from "react";
 const Payment = () => {
     return (
         <div className="space-y-[26px]">
-            <div className="space-y-[12px]">
+            <div className="md:space-y-[12px]">
                 <h1 className="font-semibold text-[24px]">Payment Details</h1>
-                <p className="text-[18px]">
+                <p className="text-sm md:text-[18px]">
                     Ready to checkout? Enter your payment information to secure
                     your order.
                 </p>
