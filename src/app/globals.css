@@ -6,20 +6,17 @@
     .wrapper {
         @apply max-md:w-[95%] w-[80%] mx-auto;
     }
-  
 }
 
+.gradient_button {
+    width: 189px;
+    height: 37px;
+    padding: 5px;
+    gap: 10px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #fb6969 0%, #b91d1d 100%);
+}
 
-  .gradient_button {
-        width: 189px;
-        height: 37px;
-        padding: 5px;
-        gap: 10px;
-        border-radius: 20px;
-        opacity: 0px;
-        background: linear-gradient(90deg, #fb6969 0%, #b91d1d 100%);
-    }
-
-    .animate {
-        animation: 3s animateinfinite infinite linear ease-in-out;
-    }
+.animate {
+    animation: 3s animateinfinite infinite linear ease-in-out;
+}

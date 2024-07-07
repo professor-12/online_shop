@@ -86,7 +86,7 @@ const Carousel = () => {
         <div ref={parentRef} className="w-full relative">
             <Image
                 onClick={handleScrollRight}
-                className="absolute cursor-pointer right-0 top-[40%] z-[111]"
+                className="absolute flex self-center cursor-pointer right-0 top-[calc(40%-24px)] z-[111]"
                 src={"/elements (1).svg"}
                 width={48}
                 alt=""
@@ -95,7 +95,7 @@ const Carousel = () => {
             <Image
                 onClick={handleScrollLeft}
                 src={"/elements.svg"}
-                className="rotate-180 cursor-pointer top-[40%] absolute z-[111]"
+                className="rotate-180 cursor-pointer top-[calc(40%-24px)] absolute z-[111]"
                 width={48}
                 alt=""
                 height={48}
