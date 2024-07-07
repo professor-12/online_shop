@@ -3,7 +3,7 @@ import React from "react";
 
 const HeroSection = () => {
     return (
-        <section className="xl:h-[631px]  max-md:space-y-8 py-[50px] wrapper flex max-md:flex-col items-center">
+        <section className="xl:h-[631px] overflow-hidden  max-md:space-y-8 py-[50px] wrapper flex max-md:flex-col items-center">
             <div className="pt-[50px]  md:text-left text-center space-y-[39px]">
                 <div className="space-y-[15px]">
                     <p className="md:text-[20px] text-[16px] text-secondary-darkBlue font-[500]">
@@ -17,11 +17,9 @@ const HeroSection = () => {
                         step.Discover stylish and comfortable shoes
                     </p>
                 </div>
-                <button className="max-md:px-2 text-white bg-secondary-darkBlue rounded-[20px] p-[8px]  flex justify-between max-md:mx-auto items-center">
+                <button className=" text-white bg-secondary-darkBlue rounded-[20px] p-3 px-4  flex justify-between max-md:mx-auto items-center">
                     <div className="flex gap-[30px]   mx-auto items-center">
-                        <p className="md:text-[20px] text-[18px] leading-[24px]">
-                            Shop now
-                        </p>
+                        <p className="md:text-[20px] text-[18px]">Shop now</p>
                         <Image
                             className=""
                             src={"/elements (1).svg"}
@@ -33,7 +31,7 @@ const HeroSection = () => {
                 </button>
             </div>
             <Image
-                className="max-md:w-[45%]"
+                className="md:w-[45%]"
                 src={"/Hero images.png"}
                 alt="Hero Image"
                 width={652.85}
