@@ -9,7 +9,9 @@ export default function Home() {
     return (
         <main className="min-h-screen">
             <HeroSection />
-            <SalesAdvert />
+            <main className="max-lg:hidden">
+                <SalesAdvert />
+            </main>
             <SlideShow />
             <ShopSection />
             <SustainableSection />

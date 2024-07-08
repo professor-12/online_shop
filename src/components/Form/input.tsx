@@ -3,7 +3,7 @@ import React, { FC, InputHTMLAttributes } from "react";
 const Input = (props: InputHTMLAttributes<HTMLInputElement>) => {
     return (
         <input
-            className="bg-transparent focus:outline-none p-2 w-full"
+            className="bg-transparent focus:outline-none p-[7px] w-full"
             {...props}
         />
     );
@@ -23,7 +23,7 @@ export const InputWrapper: FC<InputWrapperProps> = ({
 }: InputWrapperProps) => {
     return (
         <div className="space-y-[7px]">
-            <label className="text-[18px] font-[500]" htmlFor={rest.id}>
+            <label className="md:text-[18px] font-[500]" htmlFor={rest.id}>
                 {label}
             </label>
             <div className="border px-2 border-[#646464] rounded flex space-x-2">

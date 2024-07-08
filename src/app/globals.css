@@ -21,3 +21,6 @@
     animation: 3s animateinfinite infinite linear ease-in-out;
 }
 
+.sales_gradient {
+    background: linear-gradient(90deg, #fb6969 0%, #b91d1d 100%);
+}

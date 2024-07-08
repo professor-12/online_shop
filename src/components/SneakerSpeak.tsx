@@ -20,13 +20,14 @@ const SneakerSpeak = () => {
             >
                 {List.map((e, indx) => (
                     <div
+                        onClick={() => setX(indx)}
                         key={indx}
                         style={{
                             transform: `scale(${indx == x ? "1.05" : "1"})`,
                         }}
                         className={`bg-white  ${
                             indx == x && "shadow-lg shadow-[#cfbeaf80]"
-                        } transition-all duration-500 space-y-[26px] w-[554px] py-[20px] rounded-[10px]`}
+                        } transition-all duration-500 space-y-[26px] w-[554px] cursor-pointer py-[20px] rounded-[10px]`}
                     >
                         <div className="space-y-[17px] flex flex-col items-center">
                             <div className="space-x-[12px] w-fit flex items-center">

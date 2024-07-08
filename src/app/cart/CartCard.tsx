@@ -23,7 +23,7 @@ const CartCard = () => {
                                 Black lasted edition
                             </p>
                         </div>
-                        <div className="flex gap-[6px]">
+                        <div className="flex gap-[15px]">
                             <div>
                                 <label
                                     htmlFor="sizze"
@@ -58,7 +58,7 @@ const CartCard = () => {
                     </div>
                 </div>
                 <div className="flex  md:flex-col items-center  justify-between">
-                    <h1 className="font-semibold text-[18px]">#40,000</h1>
+                    <h1 className="font-semibold text-[18px]">$40,000</h1>
                     <Image
                         src={"/trash.svg"}
                         width={12 * 2}

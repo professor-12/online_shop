@@ -20,20 +20,20 @@ const OrderSummary = () => {
                     <div className="gap-[13px]">
                         <div className="flex justify-between">
                             <h1>Cart Total</h1>
-                            <p>#500,000</p>
+                            <p>$500,000</p>
                         </div>
                         <div className="flex justify-between">
                             <h1>Discount</h1>
-                            <p>#10,000</p>
+                            <p>$10,000</p>
                         </div>
                         <div className="flex justify-between">
                             <h1>Delivery fees</h1>
-                            <p>#000,000</p>
+                            <p>$000,000</p>
                         </div>
                     </div>
                     <div className="flex justify-between font-semibold">
                         <h1>Cart Total</h1>
-                        <p>#510,000</p>
+                        <p>$10,000</p>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@ const Card = () => {
                     <p className="text-[#646464] text-[14px] font-medium">
                         20 - 30l
                     </p>
-                    <h1 className="font-semibold text-[16px]">#40 000</h1>
+                    <h1 className="font-semibold text-[16px]">$40 000</h1>
                 </div>
                 <h1 className="text-[24px] font-semibold">x1</h1>
             </div>

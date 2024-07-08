@@ -30,19 +30,19 @@ const Summary = () => {
                                 <h1 className="text-[16px] font-[400]">
                                     Cart Total
                                 </h1>
-                                <p>#500,000</p>
+                                <p>$500,000</p>
                             </div>
                             <div className="flex justify-between">
                                 <h1 className="text-[16px] font-[400]">
                                     Discount
                                 </h1>
-                                <p>#10,000</p>
+                                <p>$10,000</p>
                             </div>
                             <div className="flex justify-between">
                                 <h1 className="text-[16px] font-[400]">
                                     Delivery fees
                                 </h1>
-                                <p>#0000</p>
+                                <p>$0000</p>
                             </div>
                         </div>
                     </div>
@@ -50,21 +50,27 @@ const Summary = () => {
                     <div className="space-y-[18px]">
                         <div className="flex font-semibold justify-between">
                             <h1 className="">Total</h1>
-                            <p>#510,000</p>
+                            <p>$510,000</p>
                         </div>
-                        <button onClick={()=>push("/checkout")} className="w-full text-white  bg-secondary-darkBlue text-center p-[10px] rounded-[5px]">
+                        <button
+                            onClick={() => push("/checkout")}
+                            className="w-full text-white  bg-secondary-darkBlue text-center p-[10px] rounded-[5px]"
+                        >
                             Checkout
                         </button>
-                        <button className="w-full text-secondary-darkBlue font-semibold  border border-secondary-darkBlue text-center p-[10px] rounded-[5px]">
+                        <button
+                            onClick={() => push("/shop")}
+                            className="w-full text-secondary-darkBlue font-semibold  border border-secondary-darkBlue text-center p-[10px] rounded-[5px]"
+                        >
                             Continue Shopping
                         </button>
                     </div>
                 </div>
             </div>
 
-            <button className="w-full flex items-center gap-[14px] text-[#FB6969]  border-[#FB6969] p-[10px] rounded-[8px]  border">
+            <button className="w-full flex items-center md:gap-[14px] md:justify-center justify-between text-[#FB6969]  border-[#FB6969] p-[10px] rounded-[8px]  border">
                 <Image width={20} alt="" height={20} src="/diamond.svg" />
-                <span className="md:text-[16px] text-sm text-[#B91D1D]">
+                <span className="md:text-[14px] text-sm text-nowrap text-[#B91D1D]">
                     Delivery fees is calculated at checkout
                 </span>
             </button>
