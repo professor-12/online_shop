@@ -3,9 +3,9 @@ import React from "react";
 
 const SalesAdvert = () => {
     return (
-        <div className="h-[124px] text-white py-[10px] flex items-center bg-secondary-darkBlue">
-            <div className="wrapper animate max-lg:w-full justify-between  flex items-center">
-                <div className="md:space-x-[17px] flex-wrap justify-between flex items-center">
+        <div className="h-[124px] overflow-x-hidden text-white py-[10px] flex items-center bg-secondary-darkBlue">
+            <div className="gap-[40px] wrapper mx-auto flex items-center">
+                <div className="md:space-x-[17px] justify-between flex items-center">
                     <Image
                         className="max-md:h-[15px] max-md:w-[15px]"
                         src={"/truck.svg"}
@@ -22,7 +22,7 @@ const SalesAdvert = () => {
                         </p>
                     </div>
                 </div>
-                <div className="md:space-x-[17px] flex-wrap justify-between  relative flex items-center">
+                <div className="md:space-x-[17px] justify-between  relative flex items-center">
                     <Image
                         className="max-md:h-[15px] max-md:w-[15px]"
                         src={"/Group 12.svg"}

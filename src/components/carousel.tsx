@@ -8,7 +8,7 @@ const Carousel = () => {
     const targetRef = useRef<any>();
     const parentRef = useRef<any>();
     const [x, setX] = useState(0);
-    const [startAnimation, setStartAnimation] = useState(true);
+
     useEffect(() => {
         const observerCallback = (entries: any, observer: any) => {
             entries.forEach((entry: any) => {
@@ -77,18 +77,21 @@ const Carousel = () => {
                     onClick={(e) => console.log(e)}
                     className="grid  w-ful grid-flow-col gap-[30px]"
                 >
-                    {bestDealData.map(({ fake, name, path, price }) => {
-                        return (
-                            <Card
-                                className=""
-                                key={path}
-                                fakeprice={fake}
-                                name={name}
-                                path={path}
-                                price={price}
-                            />
-                        );
-                    })}
+                    {bestDealData.map(
+                        ({ fake, name, path, price, quantity }) => {
+                            return (
+                                <Card
+                                    className=""
+                                    key={path}
+                                    fakeprice={fake}
+                                    name={name}
+                                    quantity={quantity}
+                                    path={path}
+                                    price={price}
+                                />
+                            );
+                        }
+                    )}
                     <div ref={targetRef}></div>
                 </div>
             </div>

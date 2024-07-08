@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Products from "./Products";
 
-const Shop = () => {
+const Sales = () => {
     const [page, setPage] = useState(1);
     return (
         <div>
@@ -22,18 +22,25 @@ const Shop = () => {
                         />
                     </div>
                 </div>
-                <div className="xl:w-[70%] md:hidden justify-end md:gap-[20px] px-3 xl:px-0 mx-auto flex mt-[12px]">
-                    <button className="bg-secondary-darkBlue  flex gap-4  text-white p-3 px-4 rounded-md">
-                        <span className="txt-white">Filter</span>{" "}
-                        <Image
-                            src="/Filter.svg"
-                            width={20}
-                            alt={"sd"}
-                            height={20}
-                        />
-                    </button>
+                <div className="space-y-10 my-[50px]">
+                    <div className="xl:w-[70%]  px-3 max-md:justify-between justify-end max-md:flex-row-reverse xl:px-0 lg:px-6 mx-auto flex">
+                        <button className="bg-secondary-darkBlue md:hidden  flex gap-4  text-white p-3 px-4 rounded-md">
+                            <span className="txt-white">Filter</span>{" "}
+                            <Image
+                                src="/Filter.svg"
+                                width={20}
+                                alt={"sd"}
+                                height={20}
+                            />
+                        </button>
+                        <button className="sales_gradient  p-[10px] rounded-[10px]">
+                            <span className="text-white  flex ml-[auto] text-center font-semibold">
+                                Ends in: 12h: 10m: 10s
+                            </span>
+                        </button>
+                    </div>
+                    <Products />
                 </div>
-                <Products />
             </div>
             <div className="mx-auto flex gap-3 p-3 justify-center">
                 <button
@@ -82,4 +89,4 @@ const Shop = () => {
     );
 };
 
-export default Shop;
+export default Sales;

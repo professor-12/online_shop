@@ -1,3 +1,4 @@
+import CheckBox from "@/components/CheckBox";
 import Image from "next/image";
 import React from "react";
 
@@ -9,52 +10,28 @@ const SideBar = () => {
                 <div className="space-y-[6px]">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-[8px]">
-                            <Image
-                                className="cursor-pointer"
-                                src="/checkmark-square-02.svg"
-                                width={30}
-                                height={30}
-                                alt="checkMark"
-                            />
+                            <CheckBox defaultValue />
                             <p>All</p>
                         </div>
                         <span>150</span>
                     </div>
                     <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-[8px]">
-                            <Image
-                                className="cursor-pointer"
-                                src="/checkmark-square-02 (1).svg"
-                                width={30}
-                                height={30}
-                                alt="checkMark"
-                            />
+                            <CheckBox />
                             <p>Male Shoes</p>
                         </div>
                         <span>50</span>
                     </div>
                     <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-[8px]">
-                            <Image
-                                className="cursor-pointer"
-                                src="/checkmark-square-02 (1).svg"
-                                width={30}
-                                height={30}
-                                alt="checkMark"
-                            />
+                            <CheckBox />
                             <p>Female Shoes</p>
                         </div>
                         <span>50</span>
                     </div>
                     <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-[8px]">
-                            <Image
-                                className="cursor-pointer"
-                                src="/checkmark-square-02.svg"
-                                width={30}
-                                height={30}
-                                alt="checkMark"
-                            />
+                            <CheckBox />
                             <p>Children Shoes</p>
                         </div>
                         <span>50</span>
@@ -77,52 +54,28 @@ const SideBar = () => {
                 <div className="space-y-[6px]">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-[8px]">
-                            <Image
-                                className="cursor-pointer"
-                                src="/checkmark-square-02.svg"
-                                width={30}
-                                height={30}
-                                alt="checkMark"
-                            />
+                            <CheckBox defaultValue />
                             <p>6-20</p>
                         </div>
                         <span>20</span>
                     </div>
                     <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-[8px]">
-                            <Image
-                                className="cursor-pointer"
-                                src="/checkmark-square-02 (1).svg"
-                                width={30}
-                                height={30}
-                                alt="checkMark"
-                            />
+                            <CheckBox />
                             <p>21-30</p>
                         </div>
                         <span>50</span>
                     </div>
                     <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-[8px]">
-                            <Image
-                                className="cursor-pointer"
-                                src="/checkmark-square-02 (1).svg"
-                                width={30}
-                                height={30}
-                                alt="checkMark"
-                            />
+                            <CheckBox />
                             <p>31-40</p>
                         </div>
                         <span>40</span>
                     </div>
                     <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-[8px]">
-                            <Image
-                                className="cursor-pointer"
-                                src="/checkmark-square-02.svg"
-                                width={30}
-                                height={30}
-                                alt="checkMark"
-                            />
+                            <CheckBox />
                             <p>41-50</p>
                         </div>
                         <span>40</span>
@@ -134,52 +87,28 @@ const SideBar = () => {
                 <div className="space-y-[6px]">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-[8px]">
-                            <Image
-                                className="cursor-pointer"
-                                src="/checkmark-square-02.svg"
-                                width={30}
-                                height={30}
-                                alt="checkMark"
-                            />
+                            <CheckBox />
                             <p>Nike</p>
                         </div>
                         <span>120</span>
                     </div>
                     <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-[8px]">
-                            <Image
-                                className="cursor-pointer"
-                                src="/checkmark-square-02 (1).svg"
-                                width={30}
-                                height={30}
-                                alt="checkMark"
-                            />
+                            <CheckBox />
                             <p>Puma</p>
                         </div>
                         <span>03</span>
                     </div>
                     <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-[8px]">
-                            <Image
-                                className="cursor-pointer"
-                                src="/checkmark-square-02 (1).svg"
-                                width={30}
-                                height={30}
-                                alt="checkMark"
-                            />
+                            <CheckBox />
                             <p>K-Swiss</p>
                         </div>
                         <span>01</span>
                     </div>
                     <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-[8px]">
-                            <Image
-                                className="cursor-pointer"
-                                src="/checkmark-square-02.svg"
-                                width={30}
-                                height={30}
-                                alt="checkMark"
-                            />
+                            <CheckBox />
                             <p>Encap</p>
                         </div>
                         <span>01</span>

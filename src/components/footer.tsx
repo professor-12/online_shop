@@ -49,7 +49,7 @@ const Footer = () => {
                         </Link>
                         <Link
                             className="text-white text-[16px] md:text-[18px]"
-                            href={"/"}
+                            href={"/sales"}
                         >
                             Sales
                         </Link>
@@ -78,7 +78,7 @@ const Footer = () => {
                         </Link>
                         <Link
                             className="text-white flex items-center space-x-2 text-[16px] md:text-[18px]"
-                            href={"/"}
+                            href={""}
                         >
                             <svg
                                 width="20"
