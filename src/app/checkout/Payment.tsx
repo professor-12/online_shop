@@ -5,7 +5,7 @@ import React from "react";
 
 const Payment = () => {
     return (
-        <div className="space-y-[26px]">
+        <div className="space-y-[26px]  overscroll-y-auto">
             <div className="md:space-y-[12px]">
                 <h1 className="font-semibold text-[24px]">Payment Details</h1>
                 <p className="text-sm md:text-[18px]">
@@ -17,7 +17,7 @@ const Payment = () => {
                 <p className="text-sm md:text-[20px] font-semibold">
                     Shipping Information
                 </p>
-                <div className="flex max-md:space-y-[21px] max-md:flex-col justify-between gap-4">
+                <div className="flex max-md:space-y-[12px] max-md:flex-col justify-between gap-4">
                     <InputWrapper
                         label="First Name"
                         placeholder="Enter your full name"
@@ -41,7 +41,7 @@ const Payment = () => {
                         />
                     </InputWrapper>
                 </div>
-                <div className="flex max-md:space-y-[21px] max-md:flex-col justify-between gap-4">
+                <div className="flex max-md:space-y-[12px] max-md:flex-col justify-between gap-4">
                     <InputWrapper
                         label="Email Address"
                         placeholder="Enter your email address"
@@ -75,7 +75,7 @@ const Payment = () => {
                     </div>
                 </InputWrapper>
 
-                <div className="md:flex gap-4 justify-between  items-center">
+                <div className="md:flex gap-4 max-md:space-y-[12px] justify-between  items-center">
                     <div className="flex-1">
                         <label className="md:text-[18px] font-[500]">
                             State
@@ -112,9 +112,9 @@ const Payment = () => {
                     </div>
                 </div>
             </div>
-            <div className="space-y-[21px]">
+            <div className="space-y-[12px]">
                 <h1 className="text-[20px] font-semibold">Payment method</h1>
-                <div className="md:gap-[40px] flex">
+                <div className="gap-[40px] flex">
                     <div className="flex gap-[5px]">
                         <CheckBox />
                         <Image
@@ -143,7 +143,7 @@ const Payment = () => {
                         />
                     </div>
                 </div>
-                <div className="flex max-md:space-y-[21px] max-md:flex-col justify-between gap-4">
+                <div className="flex max-md:space-y-[12px] max-md:flex-col justify-between gap-4">
                     <InputWrapper
                         label="Card Number"
                         placeholder="Enter card number"
@@ -175,7 +175,7 @@ const Payment = () => {
                     ></InputWrapper>
                     <InputWrapper label="CVC" placeholder="305"></InputWrapper>
                 </div>
-                <button className="bg-secondary-darkBlue hover:bg-[#CED7F4] transition-all duration-1000 w-full p-[10px] text-center text-[20px] text-white rounded-[10px]">
+                <button className="bg-secondary-darkBlue hover:bg-[#CED7F4]  w-full p-[10px] text-center text-[20px] text-white rounded-[10px]">
                     Pay $51000
                 </button>
             </div>

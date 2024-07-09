@@ -5,40 +5,8 @@ import { bestDealData } from "@/lib/dummy_data";
 import Image from "next/image";
 
 const Carousel = () => {
-    const targetRef = useRef<any>();
     const parentRef = useRef<any>();
     const [x, setX] = useState(0);
-
-    useEffect(() => {
-        const observerCallback = (entries: any, observer: any) => {
-            entries.forEach((entry: any) => {
-                if (entry.isIntersecting) {
-                    setX(0);
-                }
-            });
-        };
-
-        const observerOptions = {
-            root: null,
-            rootMargin: "-12px",
-            threshold: 0.1,
-        };
-
-        const observer = new IntersectionObserver(
-            observerCallback,
-            observerOptions
-        );
-
-        const targetElement = targetRef.current;
-        if (targetElement) {
-            observer.observe(targetElement);
-        }
-        return () => {
-            if (targetElement) {
-                observer.unobserve(targetElement);
-            }
-        };
-    }, []);
 
     const handleScrollLeft = () => {
         if (x <= 0) return;
@@ -46,6 +14,7 @@ const Carousel = () => {
     };
 
     const handleScrollRight = () => {
+        if (x >= 200 * 8) return;
         setX((prev) => prev + 200);
     };
 
@@ -92,7 +61,7 @@ const Carousel = () => {
                             );
                         }
                     )}
-                    <div ref={targetRef}></div>
+                    
                 </div>
             </div>
         </div>

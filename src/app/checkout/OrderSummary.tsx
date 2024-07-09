@@ -15,8 +15,13 @@ const OrderSummary = ({ sm, click }: { sm?: boolean; click?: () => any }) => {
     return (
         <div onClick={handleClick} className={customClassName}>
             {sm && (
-                <div className="text-red-500 text-center w-full font-semibold flex  justify-center bg-red-300 text-lg sticky top-0">
-                    <p className="">Cancel</p>
+                <div className="flex justify-center">
+                    <Image
+                        src="/multiplication-sign.svg"
+                        width={30}
+                        height={30}
+                        alt="ds"
+                    />
                 </div>
             )}
             <div className="text-white space-y-[28px]">
