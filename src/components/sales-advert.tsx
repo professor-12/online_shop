@@ -56,7 +56,6 @@ const SalesAdvert = () => {
                         </p>
                     </div>
                 </div>
-               
             </div>
         </div>
     );
