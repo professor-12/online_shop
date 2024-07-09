@@ -14,15 +14,13 @@ const NavBar = () => {
         setOpen(false);
         push(link ?? "/");
     };
-
     return (
         <div className="w-full py-[10px] flex items-center  text-white px-2 h-[79px] bg-secondary-darkBlue">
             <nav className="wrapper max-md:hidden  mx-auto flex item-center justify-between">
                 <div className="flex items-center gap-[79px]">
                     <Logo />
                     <div className="md:space-x-[50px] font-[600] max-lg:sm flex items-center text-[20px]">
-                        <Link href={"/"}>HOME</Link>
-                        <Link href={"/shop"}>SHOP</Link>
+                        <Link href={"/#shop"}>SHOP</Link>
                         <Link href={"/sales"}>SALES</Link>
                     </div>
                 </div>

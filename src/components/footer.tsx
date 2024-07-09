@@ -35,15 +35,10 @@ const Footer = () => {
                         <h1 className=" text-[18px] md:text-[24px] font-[700]">
                             Product
                         </h1>
+
                         <Link
                             className="text-white text-[16px] md:text-[18px]"
-                            href={"/"}
-                        >
-                            Home
-                        </Link>
-                        <Link
-                            className="text-white text-[16px] md:text-[18px]"
-                            href={"/shop"}
+                            href={"/#shop"}
                         >
                             Shop
                         </Link>

@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import React from "react";
 
 const HeroSection = () => {
-    const a = useRouter()
+    const a = useRouter();
     return (
         <section className="xl:h-[631px] overflow-hidden  max-md:space-y-8 md:py-[50px] wrapper flex max-md:flex-col items-center">
             <div className="pt-[50px]  md:text-left text-center space-y-[39px]">
@@ -20,8 +20,11 @@ const HeroSection = () => {
                         step.Discover stylish and comfortable shoes
                     </p>
                 </div>
-                <button className=" text-white bg-secondary-darkBlue rounded-[20px] p-3 px-4  flex justify-between max-md:mx-auto items-center">
-                    <div onClick={() => a.push("/shop")} className="flex gap-[30px]   mx-auto items-center">
+                <button className=" text-white hover:bg-[#CED7F4] transition-all duration-1000  bg-secondary-darkBlue rounded-[20px] p-3 px-4  flex justify-between max-md:mx-auto items-center">
+                    <div
+                        onClick={() => a.push("#shop")}
+                        className="flex gap-[30px]   mx-auto items-center"
+                    >
                         <p className="md:text-[20px] text-[18px]">Shop now</p>
                         <Image
                             className=""
