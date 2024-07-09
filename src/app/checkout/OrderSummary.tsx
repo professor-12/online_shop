@@ -14,9 +14,11 @@ const OrderSummary = ({ sm, click }: { sm?: boolean; click?: () => any }) => {
         : "lg:flex-1 px-5 lg:px-[68px]  bg-secondary-darkBlue max-md:hidden  py-[30px] rounded-[30px]";
     return (
         <div onClick={handleClick} className={customClassName}>
-            <div className="text-red-500 text-center w-full font-semibold flex  justify-center bg-red-300 text-lg sticky top-0">
-                <p className="">Cancel</p>
-            </div>
+            {sm && (
+                <div className="text-red-500 text-center w-full font-semibold flex  justify-center bg-red-300 text-lg sticky top-0">
+                    <p className="">Cancel</p>
+                </div>
+            )}
             <div className="text-white space-y-[28px]">
                 {!sm && (
                     <div className="space-y-[12px]">
