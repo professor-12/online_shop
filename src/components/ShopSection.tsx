@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import PaginationButton from "./PaginationButton";
 import Products from "@/app/sales/Products";
 import Image from "next/image";
+import { dummy_data } from "@/lib/dummy_data";
 
 const ShopSection = () => {
     const [hidden, setHidden] = useState(true);
@@ -35,7 +36,11 @@ const ShopSection = () => {
                 </button>
             </div>
             <div className="relative">
-                <Products hidden={hidden} setHidden={setHidden} />
+                <Products
+                    data={dummy_data}
+                    hidden={hidden}
+                    setHidden={setHidden}
+                />
                 <PaginationButton />
             </div>
         </section>
