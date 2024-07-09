@@ -10,8 +10,8 @@ export default function Home() {
             <main className="max-lg:hidden">
                 <SalesAdvert />
             </main>
-            <SlideShow  />
-            <ShopSection />
+            <SlideShow />
+            <ShopSection  />
         </main>
     );
 }

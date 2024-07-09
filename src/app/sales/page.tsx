@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Products from "./Products";
 import PaginationButton from "@/components/PaginationButton";
+import { bestDealData, dummy_data } from "@/lib/dummy_data";
 
 const Sales = () => {
     const [hideSideBar, setHideSideBar] = useState(true);
@@ -43,7 +44,11 @@ const Sales = () => {
                             </span>
                         </button>
                     </div>
-                    <Products hidden={hideSideBar} setHidden={setHideSideBar} />
+                    <Products
+                        data={dummy_data}
+                        hidden={hideSideBar}
+                        setHidden={setHideSideBar}
+                    />
                     <PaginationButton />
                 </div>
             </div>
