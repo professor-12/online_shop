@@ -2,6 +2,7 @@ import React from "react";
 import CartCard from "./CartCard";
 import Summary from "./Summary";
 import ContineShoping from "@/components/ContineShoping";
+import { cart } from "@/lib/dummy_data";
 
 const Cart = () => {
     return (
@@ -18,9 +19,16 @@ const Cart = () => {
                 </div>
                 <div className="flex max-md:flex-col space-y-[39px] md:space-y-0 md:space-x-6 xl:space-x-[118px]">
                     <div className="space-y-[20px] flex-[2]">
-                        <CartCard />
-                        <CartCard />
-                        <CartCard />
+                        {cart.map(({ name, path, price }) => {
+                            return (
+                                <CartCard
+                                    key={path}
+                                    name={name}
+                                    path={path}
+                                    price={price}
+                                />
+                            );
+                        })}
                     </div>
                     <div className="space-y-[12px] flex-1">
                         <Summary />

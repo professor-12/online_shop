@@ -32,3 +32,19 @@ export const bestDealData = [
      { name: "k-swiss Sneakers B", quantity: 5, price: "40,000", path: "/unsplash_jLEGurepDco.png", fake: "70,000" }, 
          
 ] as const
+
+
+
+export const cart = [
+      { name: "Nike-Puma Sneakers", price: "40,000", path: "/unsplash_g3CMh2nqj_w.png",  },
+      { name: "Nike Sneakers", price: "70,000", path: "/unsplash_HcqA34-uWo4.png", },
+      { name: "K-swiss Sneakers", price: "120,000", path: "/unsplash_jLEGurepDco.png",  },
+      { name: "Nike-Puma Sneakers", price: "50,000", path: "/unsplash_BjhKc5QBzlg.png",  },
+] as const
+
+export const Checkout = [
+         { name: "Nike-Puma Sneakers", price: "40,000", path: "/unsplash_g3CMh2nqj_w.png",  },
+         { name: "Puma Sneakers", price: "50,000", path: "/unsplash_jLEGurepDco.png",  },
+         { name: "Nike Sneakers", price: "60,000", path: "/unsplash_BjhKc5QBzlg.png",  },
+         { name: "Nike-Puma Sneakers", price: "70,000", path: "/unsplash_HcqA34-uWo4.png",  },
+] as const

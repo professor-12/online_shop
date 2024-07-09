@@ -1,23 +1,26 @@
 import Image from "next/image";
 import React from "react";
 
-const CartCard = () => {
+const CartCard = ({
+    name,
+    path,
+    price,
+}: {
+    name: string;
+    path: string;
+    price: string;
+}) => {
     return (
         <>
             <div className="border-[2px] max-md:space-y-[17px] p-[20px] max-md:flex-col rounded-[10px] border-secondary-darkBlue flex justify-between">
                 <div className="flex gap-[11px]">
                     <div className="h-full flex items-center bg-[#9DAEEA] rounded-lg">
-                        <Image
-                            alt=""
-                            src="/unsplash_fUEP0djb1hA.png"
-                            width={98}
-                            height={75}
-                        />
+                        <Image alt="" src={path} width={98} height={75} />
                     </div>
                     <div className="space-y-[16px]">
                         <div>
                             <h1 className="font-semibold text-[18px]">
-                                Nike-Puma Sneakers
+                                {name}
                             </h1>
                             <p className="text-[#646464] text-[14px] font-medium">
                                 Black lasted edition
@@ -58,7 +61,7 @@ const CartCard = () => {
                     </div>
                 </div>
                 <div className="flex  md:flex-col items-center  justify-between">
-                    <h1 className="font-semibold text-[18px]">$40,000</h1>
+                    <h1 className="font-semibold text-[18px]">${price}</h1>
                     <Image
                         src={"/trash.svg"}
                         width={12 * 2}
