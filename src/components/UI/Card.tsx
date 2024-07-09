@@ -25,7 +25,8 @@ const Card = ({
 }) => {
     const Style = !shop
         ? { minWidth: `${width}px`, minHeight: `${height}px` }
-        : { maxWidth: `${width}px`, maxHeight: `${height}px` };
+        : { maxWidth: "275px" };
+
     return (
         <div
             style={Style}
@@ -55,13 +56,15 @@ const Card = ({
                 </h1>
                 {shop && (
                     <Link href="/cart">
-                        <Image
-                            className="absolute -right-[23px] max-md:-top-20 top-2"
-                            src={"/Group 16 (3).svg"}
-                            height={30}
-                            width={30}
-                            alt="add-to-cart"
-                        />
+                        <div>
+                            <Image
+                                className="absolute -right-[23px] max-md:-top-20 top-2"
+                                src={"/Group 16 (3).svg"}
+                                height={30}
+                                width={30}
+                                alt="add-to-cart"
+                            />
+                        </div>
                     </Link>
                 )}
                 <p className="font-semibold flex items-center space-x-2 text-[14px] text-xs">

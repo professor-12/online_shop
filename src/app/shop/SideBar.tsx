@@ -2,10 +2,36 @@ import CheckBox from "@/components/CheckBox";
 import Image from "next/image";
 import React from "react";
 
-const SideBar = () => {
+const SideBar = ({
+    sm,
+    setHidden,
+}: {
+    sm?: boolean;
+    setHidden?: (a: boolean) => any;
+}) => {
+    const handleSrtHidden = () => {
+        setHidden && setHidden(false);
+    };
     return (
-        <div className="flex-1 space-y-[41px] border-[2px] p-[20px] rounded-[20px] border-secondary-darkBlue">
+        <div
+            className={
+                sm
+                    ? "fixed  h-[60vh] overflow-y-auto shadow z-[99] top-[4rem] left-[17%] flex-[2] space-y-[41px] border-[2px] p-[20px] rounded-[20px] bg-white border-[#D7D7D7]"
+                    : "flex-[2] space-y-[41px] border-[2px] p-[20px] rounded-[20px] bg-white border-[#D7D7D7]"
+            }
+        >
             <div className="space-y-[10px]">
+                {sm && (
+                    <div className="flex justify-center w-full">
+                        <Image
+                            onClick={handleSrtHidden}
+                            src={"/multiplication-sign.svg"}
+                            width={27}
+                            height={27}
+                            alt=""
+                        />
+                    </div>
+                )}
                 <h1 className="text-[24px] font-medium">Filters</h1>
                 <div className="space-y-[6px]">
                     <div className="flex items-center justify-between">

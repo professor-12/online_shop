@@ -54,13 +54,13 @@ const Summary = () => {
                         </div>
                         <button
                             onClick={() => push("/checkout")}
-                            className="w-full text-white  bg-secondary-darkBlue text-center p-[10px] rounded-[5px]"
+                            className="w-full text-white  hover:bg-[#CED7F4] transition-all duration-1000 bg-secondary-darkBlue text-center p-[10px] rounded-[5px]"
                         >
                             Checkout
                         </button>
                         <button
-                            onClick={() => push("/shop")}
-                            className="w-full text-secondary-darkBlue font-semibold  border border-secondary-darkBlue text-center p-[10px] rounded-[5px]"
+                            onClick={() => push("/#shop")}
+                            className="w-full text-secondary-darkBlue hover:text-[#CED7F4] hover:border-[#CED7F4] transition-all duration-1000 font-semibold  border   border-secondary-darkBlue text-center p-[10px] rounded-[5px]"
                         >
                             Continue Shopping
                         </button>

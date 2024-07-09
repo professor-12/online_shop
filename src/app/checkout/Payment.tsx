@@ -175,7 +175,7 @@ const Payment = () => {
                     ></InputWrapper>
                     <InputWrapper label="CVC" placeholder="305"></InputWrapper>
                 </div>
-                <button className="bg-secondary-darkBlue w-full p-[10px] text-center text-[20px] text-white rounded-[10px]">
+                <button className="bg-secondary-darkBlue hover:bg-[#CED7F4] transition-all duration-1000 w-full p-[10px] text-center text-[20px] text-white rounded-[10px]">
                     Pay $51000
                 </button>
             </div>

@@ -5,7 +5,7 @@ import React from "react";
 const ContineShoping = () => {
     return (
         <Link
-            href={"/shop"}
+            href={"/#shop"}
             className="mx-auto w-full max-md:py-3 md:pt-6 items-center  md:w-[80%]  lg:w-full  xl:w-[80%]   flex"
         >
             <Image

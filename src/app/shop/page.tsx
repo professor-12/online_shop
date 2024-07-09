@@ -5,10 +5,11 @@ import Products from "./Products";
 
 const Shop = () => {
     const [page, setPage] = useState(1);
+    const [hideSideBar, setHideSideBar] = useState(!false);
     return (
         <div>
             <div>
-                <div className="bg-secondary-darkBlue px-3 text-white lg:gap-[104px] pt-4 max-md:text-center md:items-center max-md:flex-col flex justify-center min-h-[345px]">
+                <div className="bg-secondary-darkBlue  px-3 text-white lg:gap-[104px] pt-4 max-md:text-center md:items-center max-md:flex-col flex justify-center min-h-[345px]">
                     <h1 className="font-semibold text-3xl lg:text-[50px] lg:leading-[60px]  md:text-[36px]">
                         Get a Free Gift <br className="max-md:hidden" /> Off
                         Every Order
@@ -23,7 +24,7 @@ const Shop = () => {
                     </div>
                 </div>
                 <div className="xl:w-[70%] md:hidden justify-end md:gap-[20px] px-3 xl:px-0 mx-auto flex mt-[12px]">
-                    <button className="bg-secondary-darkBlue  flex gap-4  text-white p-3 px-4 rounded-md">
+                    <button className="bg-secondary-darkBlue hover:bg-[#CED7F4] transition-all duration-1000  flex gap-4  text-white p-3 px-4 rounded-md">
                         <span className="txt-white">Filter</span>{" "}
                         <Image
                             src="/Filter.svg"
@@ -33,7 +34,8 @@ const Shop = () => {
                         />
                     </button>
                 </div>
-                <Products />
+
+                <Products setHidden={setHideSideBar} hidden={hideSideBar} />
             </div>
             <div className="mx-auto flex gap-3 p-3 justify-center">
                 <button

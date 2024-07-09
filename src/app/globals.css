@@ -8,6 +8,10 @@
     }
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 .gradient_button {
     width: 189px;
     height: 37px;
@@ -22,5 +26,5 @@
 }
 
 .sales_gradient {
-    background: linear-gradient(90deg, #fb6969 0%, #b91d1d 100%);
+    background: linear-gradient(90deg, #2c2a2a 0%, #b91d1d 100%);
 }
