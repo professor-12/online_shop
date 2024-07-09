@@ -3,7 +3,7 @@ import React, { FC, InputHTMLAttributes, TextareaHTMLAttributes } from "react";
 const Input = (props: InputHTMLAttributes<HTMLInputElement>) => {
     return (
         <input
-            className="bg-transparent focus:outline-none p-[7px] w-full"
+            className="bg-transparent max-md:placeholder:text-sm focus:outline-none p-[7px] w-full"
             {...props}
         />
     );
