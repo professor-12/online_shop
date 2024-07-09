@@ -20,7 +20,7 @@ const HeroSection = () => {
                         step.Discover stylish and comfortable shoes
                     </p>
                 </div>
-                <button className=" text-white hover:bg-[#CED7F4] transition-all duration-1000  bg-secondary-darkBlue rounded-[20px] p-3 px-4  flex justify-between max-md:mx-auto items-center">
+                <button className=" text-white hover:bg-[#CED7F4]   bg-secondary-darkBlue rounded-[20px] p-3 px-4  flex justify-between max-md:mx-auto items-center">
                     <div
                         onClick={() => a.push("#shop")}
                         className="flex gap-[30px]   mx-auto items-center"

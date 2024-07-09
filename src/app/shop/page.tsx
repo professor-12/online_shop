@@ -24,7 +24,10 @@ const Shop = () => {
                     </div>
                 </div>
                 <div className="xl:w-[70%] md:hidden justify-end md:gap-[20px] px-3 xl:px-0 mx-auto flex mt-[12px]">
-                    <button className="bg-secondary-darkBlue hover:bg-[#CED7F4] transition-all duration-1000  flex gap-4  text-white p-3 px-4 rounded-md">
+                    <button
+                        onClick={() => setHideSideBar(true)}
+                        className="bg-secondary-darkBlue hover:bg-[#CED7F4]   flex gap-4  text-white p-3 px-4 rounded-md"
+                    >
                         <span className="txt-white">Filter</span>{" "}
                         <Image
                             src="/Filter.svg"
@@ -35,7 +38,7 @@ const Shop = () => {
                     </button>
                 </div>
 
-                <Products setHidden={setHideSideBar} hidden={hideSideBar} />
+                <Products />
             </div>
             <div className="mx-auto flex gap-3 p-3 justify-center">
                 <button

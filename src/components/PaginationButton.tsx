@@ -12,7 +12,7 @@ const PaginationButton = () => {
                     }
                     setPage((prev) => prev - 1);
                 }}
-                className="border hover:border-[#CED7F4] transition-all duration-1000 border-secondary-darkBlue px-[6px]  rounded-lg"
+                className="border hover:border-secondary-darkBlue border-secondary-darkBlue px-[6px]  rounded-lg"
             >
                 Previous
             </button>
@@ -24,9 +24,9 @@ const PaginationButton = () => {
                         onClick={() => setPage(indx + 1)}
                         className={`border ${indx >= 4 && "max-md:hidden"} ${
                             active
-                                ? "hover:bg-[#CED7F4] hover:border-[#CED7F4] transition-all duration-1000 bg-secondary-darkBlue text-white"
+                                ? "hover:bg-[#CED7F4]   bg-secondary-darkBlue text-white"
                                 : "text-black"
-                        }  border-secondary-darkBlue h-[29px] w-[29px] rounded-lg`}
+                        }  border-secondary-darkBlue hover:bg-secondary-darkBlue hover:text-white h-[29px] w-[29px] rounded-lg`}
                     >
                         {indx + 1}
                     </button>
@@ -40,7 +40,7 @@ const PaginationButton = () => {
                     }
                     setPage((prev) => prev + 1);
                 }}
-                className="border  hover:border-[#CED7F4] transition-all duration-1000 border-secondary-darkBlue  h-[29px] px-[5px] rounded-lg"
+                className="border    border-secondary-darkBlue  h-[29px] px-[5px] rounded-lg"
             >
                 next
             </button>
