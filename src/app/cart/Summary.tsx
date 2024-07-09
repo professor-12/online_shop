@@ -68,7 +68,7 @@ const Summary = () => {
                 </div>
             </div>
 
-            <button className="w-full flex items-center md:gap-[14px] md:justify-center justify-between text-[#FB6969]  border-[#FB6969] p-[10px] rounded-[8px]  border">
+            <button className="w-full flex items-center gap-[10px]  justify-center  text-[#FB6969]  border-[#FB6969] p-[10px] rounded-[8px]  border">
                 <Image width={20} alt="" height={20} src="/diamond.svg" />
                 <span className="md:text-[14px] text-sm text-nowrap text-[#B91D1D]">
                     Delivery fees is calculated at checkout
