@@ -1,13 +1,17 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import OrderSummary from "./OrderSummary";
 import Payment from "./Payment";
 import Image from "next/image";
+import ContineShoping from "@/components/ContineShoping";
 
-const page = () => {
+const Page = () => {
+    const [show, setShow] = useState<boolean>(false);
     return (
         <div className="py-3">
+            <ContineShoping />
             <div className="bg-secondary-darkBlue flex items-center justify-between md:hidden w-full text-white p-[10px]">
-                <div className="flex gap-3">
+                <div onClick={() => setShow(true)} className="flex gap-3">
                     <h1 className="text-sm">Show order summary</h1>
                     <Image
                         src="/arrow-down.svg"
@@ -23,13 +27,12 @@ const page = () => {
                     <Payment />
                 </div>
                 <div>
-                    <div className="lg:flex-1 px-5 lg:px-[68px] bg-secondary-darkBlue max-md:hidden  py-[30px] rounded-[30px]">
-                        <OrderSummary />
-                    </div>
+                    <OrderSummary />
+                    {show && <OrderSummary sm click={() => setShow(false)} />}
                 </div>
             </div>
         </div>
     );
 };
 
-export default page;
+export default Page;

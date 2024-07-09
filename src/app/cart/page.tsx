@@ -1,10 +1,12 @@
 import React from "react";
 import CartCard from "./CartCard";
 import Summary from "./Summary";
+import ContineShoping from "@/components/ContineShoping";
 
 const Cart = () => {
     return (
         <div className="bg-[#E8EBF8] px-3 lg:px-5">
+            <ContineShoping />
             <div className="md:py-12 py-6  xl:w-[80%]  mx-auto space-y-[30px] min-h-screen">
                 <div>
                     <div className="text-center justify-center  w-full items-center gap-[13px] flex">
